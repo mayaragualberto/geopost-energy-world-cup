@@ -14,10 +14,12 @@ async function randomTeams(){
 
   console.log(randomTeams);
   separateGroups(randomTeams);
+  
 }
 
 // separar a lista randomica em grupos de 4 seleções
 async function separateGroups(randomTeams) {
+  console.log('Chamando o separateGroups');
   let groups = [];
   let identifierGroup = ["A","B","C","D","E","F","G","H"]
   let count = 0;
@@ -34,8 +36,9 @@ async function separateGroups(randomTeams) {
   // console.log(groups[0][0][0]);
   // primeiro jogador do time B
   // console.log(groups[1][1][1]);
+  printResult(groups);
+   
   return groups;
 }
 
 
-randomTeams()

@@ -1,0 +1,136 @@
+@import "./global/global.css";
+@import "./global/cores.css";
+
+/* Tabelas */
+table {
+  gap: 40px;
+  /* background-color: #9a1032; */
+}
+
+body {
+  height: 100vh;
+  background-color: var(--cor-5);
+  background-position: bottom -150px left -10px, bottom 200px left -200px,
+    bottom 0px right 250px;
+  background-repeat: no-repeat;
+  background-image: url("../img/ball.svg"), url("../img/ball.svg"),
+    url("../img/trophy.svg");
+  color: var(--cor-a2);
+}
+
+.verticalTextLeft {
+  writing-mode: vertical-lr;
+}
+
+.verticalTextRight {
+  writing-mode: vertical-rl;
+}
+
+.identifier,
+.identifierR {
+  color: var(--cor-a2);
+  background-color: var(--cor-1);
+  font-size: 12px;
+  padding: 16px 8px;
+}
+
+.identifier {
+  border-radius: 4px 0 0 4px;
+}
+
+.identifierR {
+  border-radius: 0 4px 4px 0;
+}
+
+.tag-lg {
+  content: "";
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #9a1032 0%, #f37896 100%);
+  border-radius: 0 12px 12px 12px;
+  margin-bottom: 32px;
+  z-index: -1;
+  font-size: 14px;
+}
+
+.tag-lgR {
+  content: "";
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #f37896 0%, #9a1032 100%);
+  border-radius: 12px 0 12px 12px;
+  margin-bottom: 32px;
+  z-index: -1;
+  font-size: 14px;
+}
+
+.tag-sm {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #9a1032 0%, #f37896 100%);
+  border-radius: 12px;
+  margin-bottom: 32px;
+  z-index: -1;
+  font-size: 14px;
+}
+
+.tag-md {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #9a1032 0%, #f37896 100%);
+  border-radius: 12px;
+  margin-bottom: 32px;
+  z-index: -1;
+  font-size: 14px;
+}
+
+.img-trophy {
+  margin-top: -32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 40%;
+  height: 300px;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: grid;
+  margin-top: 32px;
+}
+
+.botao::before {
+  content: "";
+  display: inline-block;
+  width: 115px;
+  height: 109px;
+  margin-top: -500px;
+  background: url("../img/2022-fifa-world-cup-mascot-logo.svg");
+  transition: transform 0.2s;
+}
+
+.botao-start {
+  border-radius: 4px;
+  color: --var(--cor-a2);
+}
+
+.botao-start:hover {
+  background-color: var(--cor-4);
+}

@@ -9,16 +9,187 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script
       src="http://code.jquery.com/jquery-2.0.3.min.js"
       type="text/javascript"
     ></script>
   </head>
+
   <body>
-    <p>Testando consumo API com jQuery</p>
+    <main class="container">
+      <div class="img-trophy">
+        <img class="" src="./img/2022_FIFA_World_Cup.svg" alt="" />
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-between">
+          <table class="col justify-content-between">
+            <tr>
+              <th class="verticalTextLeft">
+                <span class="identifier">Grupo A</span>
+              </th>
+              <td>
+                <span class="teams tag-lg" id="teamA"></span>
+              </td>
+            </tr>
+            <tr>
+              <th class="verticalTextLeft">
+                <span class="identifier">Grupo B</span>
+              </th>
+              <td>
+                <span class="teams tag-lg" id="teamB"></span>
+              </td>
+            </tr>
+            <tr>
+              <th class="verticalTextLeft">
+                <span class="identifier">Grupo C</span>
+              </th>
+              <td>
+                <span class="teams tag-lg" id="teamC"></span>
+              </td>
+            </tr>
+            <tr>
+              <th class="verticalTextLeft">
+                <span class="identifier">Grupo D</span>
+              </th>
+              <td>
+                <span class="teams tag-lg" id="teamD"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col text-center">
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col text-center">
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col text-center">
+            <tr>
+              <td>
+                <span id="" class="tag-md"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col text-center">
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col text-center">
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span id="" class="tag-sm"></span>
+              </td>
+            </tr>
+          </table>
+
+          <table class="col justify-content-between">
+            <tr>
+              <td>
+                <span class="teams tag-lgR" id="teamE"></span>
+              </td>
+              <th class="verticalTextRight">
+                <span class="identifierR">Grupo E</span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <span class="teams tag-lgR" id="teamF"></span>
+              </td>
+              <th class="verticalTextRight">
+                <span class="identifierR">Grupo F</span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <span class="teams tag-lgR" id="teamG"></span>
+              </td>
+              <th class="verticalTextRight">
+                <span class="identifierR"> Grupo G </span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <span class="teams tag-lgR" id="teamH"></span>
+              </td>
+              <th class="verticalTextRight">
+                <span class="identifierR">Grupo H</span>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container bg-botao">
+        <div class="row">
+          <div class="col text-center botao">
+            <button onclick="randomTeams()" class="botao-start">
+              Iniciar competição
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/generateTeams.js"></script>
+    <script src="js/printResult.js"></script>
   </body>
 </html>

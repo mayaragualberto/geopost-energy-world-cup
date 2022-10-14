@@ -19,3 +19,19 @@ async function get(){
   });
   return teamsResult;
 };
+
+
+
+async function post() {
+  let url = 'https://estagio.geopostenergy.com/WorldCup/InsertFinalResult';
+  let gitUser = 'mayara-gualberto';
+  
+  let responseResult = {
+    "equipeA": "token",
+    "equipeB": "token",
+    "golsEquipeA": 1,
+    "golsEquipeB": 1,
+    "golsPenaltyTimeA": 2,
+    "golsPenaltyTimeB": 1
+  }
+}
