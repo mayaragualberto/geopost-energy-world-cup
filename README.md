@@ -1,33 +1,19 @@
-Porfólio pessoal desenvolvido com HTML, CSS e JavaScript durante o curso de Desenvolvimento Web da Origamid.
+Projeto que simula a Copa do Mundo.
 
-> ### [Projeto/Protótipo realizados no Figma](https://www.figma.com/file/GCc15pxS2QawO6IoBgxcOK/mayara-projeto-pessoal-uma-pagina?node-id=10%3A0)
+> Escopo:
+São 32 seleções;
+Em cada partida, a pontuação funciona da seguinte forma:
+* 3 pontos caso vença;
+* 1 ponto em caso de empate;
+* 0 ponto caso perca.
+
+No final, a seleção com maior pontuação ganha a rodada.
+
+> ### [Projeto/Protótipo realizados no Figma](https://www.figma.com/file/V0gUUoy8JGCUN8AXZQNBdZ/geopost-energy-world-cup?node-id=1%3A2)
 
 <div style="text-align: center">
-  <img src="world-cup.gif" width="800"/>
+  <img src="world-cup.png" width="764"/>
 </div>
 
-<div style="text-align: center">
-  <img src="world-cup.png" width="300"/>
-</div>
 
-> Terminal (Windows) + VS Code:
-```sh 
-$ cd "diretorio-pessoal"
-```
-```sh 
-$ git clone https://github.com/mayaragualberto/mayaragualberto.github.io.git
-```
-```sh 
-$ code mayaragualberto.github.io.git
-```
-
-> VS Code:
-```sh 
-abrir index.html
-```
-
-> Extensão Live Server:
-
-```sh 
-alt+L, alt+O
-```
+### Observações: o projeto não está completo e precisa passar por revisões na lógica por trás do funcionamento da geração das partidas. 
