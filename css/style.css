@@ -29,7 +29,7 @@ body {
 .identifier,
 .identifierR {
   color: var(--cor-a2);
-  background-color: var(--cor-0);
+  background-color: var(--cor-p0);
   font-size: 12px;
   padding: 16px 8px;
 }
@@ -48,7 +48,7 @@ body {
   width: 150px;
   height: 100px;
   padding: 8px 16px;
-  background: linear-gradient(90deg, var(--cor-0) 0%, var(--cor-2) 100%);
+  background: linear-gradient(90deg, var(--cor-p0) 0%, var(--cor-p1) 100%);
   border-radius: 0 12px 12px 12px;
   margin-bottom: 32px;
   z-index: -1;
@@ -61,7 +61,7 @@ body {
   width: 150px;
   height: 100px;
   padding: 8px 16px;
-  background: linear-gradient(90deg, var(--cor-2) 0%, var(--cor-0) 100%);
+  background: linear-gradient(90deg, var(--cor-p1) 0%, var(--cor-p0) 100%);
   border-radius: 12px 0 12px 12px;
   margin-bottom: 32px;
   z-index: -1;
@@ -75,7 +75,7 @@ body {
   width: 50px;
   height: 20px;
   padding: 8px 16px;
-  background: linear-gradient(90deg, var(--cor-0) 0%, var(--cor-2) 100%);
+  background: linear-gradient(90deg, var(--cor-p0) 0%, var(--cor-p1) 100%);
   border-radius: 12px;
   margin-bottom: 32px;
   z-index: -1;
@@ -88,7 +88,7 @@ body {
   width: 50px;
   height: 20px;
   padding: 8px 16px;
-  background: linear-gradient(90deg, var(--cor-0) 0%, var(--cor-2) 100%);
+  background: linear-gradient(90deg, var(--cor-p0) 0%, var(--cor-p1) 100%);
   border-radius: 12px;
   margin-bottom: 32px;
   z-index: -1;
@@ -96,13 +96,13 @@ body {
 }
 
 .img-trophy {
-  margin-top: -64px;
+  margin-top: -50px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 35%;
-  height: 400px;
+  right: 37%;
+  height: 350px;
 }
 
 .container {
@@ -119,6 +119,7 @@ body {
 
 .botao {
   margin-top: -120px;
+  font-size: 24px;
 }
 
 .botao::before {
@@ -132,10 +133,15 @@ body {
 }
 
 .botao-start {
-  border-radius: 4px;
-  color: --var(--cor-a2);
+  border-radius: 12px;
+  color: var(--cor-p1);
+  box-shadow: inset -4px -4px var(--cor-p1);
+  border: none;
+  padding: 8px 16px;
 }
 
 .botao-start:hover {
-  background-color: var(--cor-2);
+  transform: scale(1.05);
+  color: var(--cor-p0);
+  will-change: transform;
 }

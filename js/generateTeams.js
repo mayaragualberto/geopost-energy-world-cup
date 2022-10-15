@@ -1,6 +1,6 @@
 // desordenar a lista de seleções de forma randômica
 async function randomTeams(){
-  console.log('Chamando o randomTeams');
+  // console.log('Chamando o randomTeams');
   let teams = await get();
 
   let randomTeams = teams;
@@ -19,7 +19,7 @@ async function randomTeams(){
 
 // separar a lista randomica em grupos de 4 seleções
 async function separateGroups(randomTeams) {
-  console.log('Chamando o separateGroups');
+  // console.log('Chamando o separateGroups');
   let groups = [];
   let identifierGroup = ["A","B","C","D","E","F","G","H"]
   let count = 0;
@@ -30,15 +30,12 @@ async function separateGroups(randomTeams) {
       count++;
     }
   }
-  console.log(groups);
+  // console.log(groups);
   // grupo | tag | lista de jogadores
   // tag do grupo:
   // console.log(groups[0][0][0]);
   // primeiro jogador do time B
   // console.log(groups[1][1][1]);
   printResult(groups);
-   
-  return groups;
 }
-
 
